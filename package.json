@@ -16,6 +16,13 @@
     "type": "git",
     "url": "git+https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template.git"
   },
+  "keywords": [
+    "serenity-js",
+    "bdd",
+    "cucumber",
+    "testing",
+    "webdriverio"
+  ],
   "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
