@@ -1,6 +1,11 @@
 import isCI = require('is-ci');
 
-export const config: WebdriverIO.Config = {
+import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { ArtifactArchiver } from '@serenity-js/core';
+import { ConsoleReporter } from '@serenity-js/console-reporter';
+import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
+
+export const config: WebdriverIOConfig = {
     //
     // ====================
     // Runner Configuration
@@ -124,13 +129,21 @@ export const config: WebdriverIO.Config = {
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
     
-    // Framework you want to run your specs with.
-    // The following are supported: Mocha, Jasmine, and Cucumber
-    // see also: https://webdriver.io/docs/frameworks
-    //
-    // Make sure you have the wdio adapter package for the specific framework installed
-    // before running any tests.
-    framework: 'cucumber',
+    // Enable Serenity/JS framework
+    framework: '@serenity-js/webdriverio',
+
+    serenity: {
+        // Use Cucumber.js test runner
+        runner: 'cucumber',
+        crew: [
+            ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
+            Photographer.whoWill(TakePhotosOfInteractions),     // slower execution, more comprehensive reports
+            // Photographer.whoWill(TakePhotosOfFailures),      // fast execution, screenshots only when tests fail
+            ConsoleReporter.forDarkTerminals(),
+            new SerenityBDDReporter(),
+        ]
+    },
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -141,40 +154,28 @@ export const config: WebdriverIO.Config = {
     // Whether or not retried specfiles should be retried immediately or deferred to the end of the queue
     // specFileRetriesDeferred: false,
     //
-    // Test reporter for stdout.
+    // Native WebdriverIO reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
 
-    //
-    // If you are using Cucumber you need to specify the location of your step definitions.
+    // Cucumber.js configuration
+    // see: https://serenity-js.org/modules/cucumber/class/src/cli/CucumberConfig.ts~CucumberConfig.html
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: ['./features/step-definitions/steps.ts'],
-        // <boolean> show full backtrace for errors
-        backtrace: false,
-        // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
-        requireModule: [],
-        // <boolean> invoke formatters without executing steps
-        dryRun: false,
-        // <boolean> abort the run on first failure
-        failFast: false,
-        // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
-        format: ['pretty'],
-        // <boolean> hide step definition snippets for pending steps
-        snippets: true,
-        // <boolean> hide source uris
-        source: true,
-        // <string[]> (name) specify the profile to use
-        profile: [],
+        // <string[]> (type[:path]) specify native Cucumber.js output format, if needed. Optionally supply PATH to redirect formatter output (repeatable)
+        format: [ ],
+        // <string> (name) specify the profile to use
+        profile: '',
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
-        // <string> (expression) only execute the features or scenarios with tags matching the expression
-        tagExpression: '',
+        // <string[] | string> (expression) only execute the features or scenarios with tags matching the expression
+        tags: [],
         // <number> timeout for step definitions
         timeout: 60000,
-        // <boolean> Enable this config to treat undefined definitions as warnings.
-        ignoreUndefinedDefinitions: false
+        // <boolean> Fail if there are any undefined or pending steps.
+        strict: false
     },
     
     //

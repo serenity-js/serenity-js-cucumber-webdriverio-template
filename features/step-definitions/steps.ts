@@ -1,4 +1,5 @@
 import { Given, Then,When } from '@cucumber/cucumber';
+import 'expect-webdriverio';
 
 import LoginPage from '../pageobjects/login.page';
 import SecurePage from '../pageobjects/secure.page';
