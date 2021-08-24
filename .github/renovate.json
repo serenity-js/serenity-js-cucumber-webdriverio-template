@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "packagePatterns": ["^@serenity-js"],
+      "groupName": "Serenity/JS",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
+}
