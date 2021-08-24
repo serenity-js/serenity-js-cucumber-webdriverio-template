@@ -12,12 +12,16 @@
     "type": "git",
     "url": "git+https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/issues"
   },
-  "homepage": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template#readme",
+  "homepage": "https://serenity-js.org",
+  "engines": {
+    "node": "^12 || ^14 || ^16",
+    "npm": "^6 || ^7"
+  },
   "devDependencies": {
     "@wdio/cli": "^7.10.1",
     "@wdio/cucumber-framework": "^7.10.1",
