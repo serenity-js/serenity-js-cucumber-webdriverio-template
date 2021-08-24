@@ -4,8 +4,8 @@ import { Given, Then, When } from '@cucumber/cucumber';
 import { Actor, actorInTheSpotlight } from '@serenity-js/core';
 import { Navigate } from '@serenity-js/webdriverio';
 
-import { Authenticate, VerifyAuthentication } from '../the-internet/authentication';
-import { PickExample } from '../the-internet/examples';
+import { Authenticate, VerifyAuthentication } from '../../test/authentication';
+import { PickExample } from '../../test/examples';
 
 /**
  * Below step definitions use Cucumber Expressions

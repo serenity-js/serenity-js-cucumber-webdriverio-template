@@ -5,7 +5,7 @@ import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
 import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
 
-import { Actors } from './features/the-internet';
+import { Actors } from './test';
 
 export const config: WebdriverIOConfig = {
 

@@ -8,7 +8,6 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "rootDir": "./features",
     "types": [
       "node",
       "webdriverio/async"
