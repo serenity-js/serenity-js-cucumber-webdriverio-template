@@ -146,7 +146,6 @@ export const config: WebdriverIO.Config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
 
-
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {

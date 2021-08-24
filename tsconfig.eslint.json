@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig",
+  "include": [
+    "features/**/*.ts",
+    "wdio.conf.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
