@@ -1,9 +1,9 @@
 import isCI = require('is-ci');
 
-import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
-import { ArtifactArchiver } from '@serenity-js/core';
 import { ConsoleReporter } from '@serenity-js/console-reporter';
+import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
+import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
 
 export const config: WebdriverIOConfig = {
     //
