@@ -16,6 +16,7 @@
 
   "include": [
     "features/**/*.ts",
+    "test/**/*.ts"
   ],
 
   "exclude": [
