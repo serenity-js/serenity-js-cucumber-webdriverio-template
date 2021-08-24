@@ -5,13 +5,38 @@ import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
 import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
 
+import { Actors } from './features/the-internet';
+
 export const config: WebdriverIOConfig = {
-    //
-    // ====================
-    // Runner Configuration
-    // ====================
-    //
-    //
+
+    // =========================
+    // Serenity/JS Configuration
+    // =========================
+
+    // Enable Serenity/JS framework adapter
+    // see: https://serenity-js.org/modules/webdriverio/
+    framework: '@serenity-js/webdriverio',
+
+    serenity: {
+        // Use custom Actors class
+        // see: https://serenity-js.org/modules/core/class/src/stage/Cast.ts~Cast.html
+        actors: new Actors(),
+
+        // Use Cucumber.js test runner adapter
+        // see: https://serenity-js.org/modules/cucumber/
+        runner: 'cucumber',
+
+        // Configure reporting services
+        // see: https://serenity-js.org/handbook/reporting/
+        crew: [
+            ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
+            Photographer.whoWill(TakePhotosOfInteractions),     // slower execution, more comprehensive reports
+            // Photographer.whoWill(TakePhotosOfFailures),      // fast execution, screenshots only when tests fail
+            ConsoleReporter.forDarkTerminals(),
+            new SerenityBDDReporter(),
+        ]
+    },
+
     // ==================
     // Specify Test Files
     // ==================
@@ -26,7 +51,6 @@ export const config: WebdriverIOConfig = {
     // If you are calling `wdio` from an NPM script (see https://docs.npmjs.com/cli/run-script),
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
-    //
     specs: [
         './features/**/*.feature'
     ],
@@ -34,7 +58,7 @@ export const config: WebdriverIOConfig = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    //
+
     // ============
     // Capabilities
     // ============
@@ -111,7 +135,7 @@ export const config: WebdriverIOConfig = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://juliemr.github.io/protractor-demo/',
+    baseUrl: 'https://the-internet.herokuapp.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -128,21 +152,6 @@ export const config: WebdriverIOConfig = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
-    // Enable Serenity/JS framework
-    framework: '@serenity-js/webdriverio',
-
-    serenity: {
-        // Use Cucumber.js test runner
-        runner: 'cucumber',
-        crew: [
-            ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
-            Photographer.whoWill(TakePhotosOfInteractions),     // slower execution, more comprehensive reports
-            // Photographer.whoWill(TakePhotosOfFailures),      // fast execution, screenshots only when tests fail
-            ConsoleReporter.forDarkTerminals(),
-            new SerenityBDDReporter(),
-        ]
-    },
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
@@ -157,13 +166,16 @@ export const config: WebdriverIOConfig = {
     // Native WebdriverIO reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    // reporters: ['spec'],
 
     // Cucumber.js configuration
     // see: https://serenity-js.org/modules/cucumber/class/src/cli/CucumberConfig.ts~CucumberConfig.html
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/steps.ts'],
+        require: [
+            './features/support/*.ts',
+            './features/step-definitions/*.ts'
+        ],
         // <string[]> (type[:path]) specify native Cucumber.js output format, if needed. Optionally supply PATH to redirect formatter output (repeatable)
         format: [ ],
         // <string> (name) specify the profile to use

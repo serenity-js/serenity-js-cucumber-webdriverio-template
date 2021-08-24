@@ -1,24 +1,41 @@
 import 'expect-webdriverio';
 
-import { Given, Then,When } from '@cucumber/cucumber';
+import { Given, Then, When } from '@cucumber/cucumber';
+import { Actor, actorInTheSpotlight } from '@serenity-js/core';
+import { Navigate } from '@serenity-js/webdriverio';
 
-import LoginPage from '../pageobjects/login.page';
-import SecurePage from '../pageobjects/secure.page';
+import { Authenticate, VerifyAuthentication } from '../the-internet/authentication';
+import { PickExample } from '../the-internet/examples';
 
-const pages = {
-    login: LoginPage
-}
+/**
+ * Below step definitions use Cucumber Expressions
+ * see: https://cucumber.io/docs/cucumber/cucumber-expressions/
+ *
+ * {actor} and {pronoun} are custom expressions defined under support/parameters.ts
+ */
+Given('{actor} starts with the {string} example', async (actor: Actor, exampleName: string) =>
+    actor.attemptsTo(
+        Navigate.to('/'),
+        PickExample.called(exampleName),
+    )
+);
 
-Given(/^I am on the (\w+) page$/, async (page) => {
-    await pages[page].open()
-});
+When('{pronoun} log(s) in using {string} and {string}', async (actor: Actor, username: string, password: string) =>
+    actor.attemptsTo(
+        Authenticate.using(username, password),
+    )
+);
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    await LoginPage.login(username, password)
-});
-
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
-    await expect(SecurePage.flashAlert).toBeExisting();
-    await expect(SecurePage.flashAlert).toHaveTextContaining(message);
-});
+/**
+ * If you need to use a RegExp instead of Cucumber Expressions like {actor} and {pronoun}
+ * you can use actorCalled(name) and actorInTheSpotlight() instead
+ *
+ *  see: https://serenity-js.org/modules/core/function/index.html#static-function-actorCalled
+ *  see: https://serenity-js.org/modules/core/function/index.html#static-function-actorInTheSpotlight
+ */
+Then(/.* should see that authentication has (succeeded|failed)/, async (expectedOutcome: string) =>
+    actorInTheSpotlight().attemptsTo(
+        VerifyAuthentication[expectedOutcome](),
+    )
+);
 

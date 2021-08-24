@@ -32,9 +32,7 @@ module.exports = {
             'max': 1,
         }],
 
-        '@typescript-eslint/explicit-module-boundary-types': ['error', {
-            'allowHigherOrderFunctions': true
-        }],
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
 
         'indent': 'off',
         '@typescript-eslint/indent': ['error', 4, {
