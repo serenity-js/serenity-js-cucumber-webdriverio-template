@@ -55,7 +55,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^35.0.0",
     "eslint-plugin-unused-imports": "^1.1.5",
-    "is-ci": "^3.0.0",
+    "is-ci": "^3.0.1",
     "npm-failsafe": "^0.4.3",
     "rimraf": "^3.0.2",
     "ts-node": "^10.4.0",
