@@ -10,6 +10,11 @@
       "automerge": true
     },
     {
+      "packagePatterns": ["^eslint$", "^eslint-plugin", "^@typescript-eslint"],
+      "groupName": "ESLint",
+      "automerge": true
+    },
+    {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
