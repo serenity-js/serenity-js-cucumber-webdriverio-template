@@ -30,7 +30,7 @@ jobs:
           CI: true
       - name: GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
-        if: matrix.node-version == '14.x' && github.ref == 'refs/heads/master'
+        if: matrix.node-version == '16.x' && github.ref == 'refs/heads/master'
         with:
           BRANCH: gh-pages
           FOLDER: target/site/serenity
