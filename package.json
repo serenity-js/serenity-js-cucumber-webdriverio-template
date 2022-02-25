@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "^5.12.1",
     "chromedriver": "^98.0.1",
     "expect-webdriverio": "^3.1.4",
-    "eslint": "^8.9.0",
+    "eslint": "^8.10.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^41.0.0",
