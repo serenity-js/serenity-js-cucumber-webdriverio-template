@@ -2,7 +2,7 @@ import 'expect-webdriverio';
 
 import { Given, Then, When } from '@cucumber/cucumber';
 import { Actor, actorInTheSpotlight } from '@serenity-js/core';
-import { Navigate } from '@serenity-js/webdriverio';
+import { Navigate } from '@serenity-js/web';
 
 import { Authenticate, VerifyAuthentication } from '../../test/authentication';
 import { PickExample } from '../../test/examples';

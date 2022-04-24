@@ -1,6 +1,6 @@
-import { by, Target } from '@serenity-js/webdriverio';
+import { By, PageElement } from '@serenity-js/web';
 
 export const FlashMessages = {
     flashAlert: () =>
-        Target.the('flash message').located(by.id('flash')),
+        PageElement.located(By.id('flash')).describedAs('flash message'),
 }

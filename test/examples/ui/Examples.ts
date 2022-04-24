@@ -1,7 +1,6 @@
 import { equals } from '@serenity-js/assertions';
-import { Question } from '@serenity-js/core';
-import { by, Target, Text } from '@serenity-js/webdriverio';
-import { Element } from 'webdriverio';
+import {  QuestionAdapter } from '@serenity-js/core';
+import { By, PageElement, PageElements, Text } from '@serenity-js/web';
 
 /**
  * This is called a "Lean Page Object".
@@ -10,7 +9,7 @@ import { Element } from 'webdriverio';
  */
 export class Examples {
     static all = () =>
-        Target.all('available examples').located(by.css('ul li a'))
+    PageElements.located(By.css('ul li a')).describedAs('available examples')
 
     /**
      * Note how I pick an element which text matches `name` without having to use XPath
@@ -18,7 +17,7 @@ export class Examples {
      *
      * @param name
      */
-    static called = (name: string): Question<Promise<Element<'async'>>> =>
+    static called = (name: string): QuestionAdapter<PageElement<unknown>> =>
         Examples.all()
             .where(Text, equals(name))
             .first()
