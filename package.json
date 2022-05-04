@@ -49,7 +49,7 @@
     "@wdio/spec-reporter": "^7.19.7",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
-    "chromedriver": "^100.0.0",
+    "chromedriver": "^101.0.0",
     "expect-webdriverio": "^3.3.1",
     "eslint": "^8.14.0",
     "eslint-plugin-import": "^2.26.0",
