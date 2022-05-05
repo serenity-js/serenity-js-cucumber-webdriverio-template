@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     types: [ opened, synchronize ]
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 12.x, 14.x, 16.x ]
+        node-version: [ 14.x, 16.x ]
 
     steps:
       - uses: actions/checkout@v3
@@ -28,10 +28,12 @@ jobs:
       - run: npm test
         env:
           CI: true
-      - name: GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        if: matrix.node-version == '16.x' && github.ref == 'refs/heads/master'
-        with:
-          BRANCH: gh-pages
-          FOLDER: target/site/serenity
-          CLEAN: true
+
+#      todo: publish 3.x reports when Serenity/JS 2.x reaches EOL and we switch to v3
+#      - name: GitHub Pages
+#        uses: JamesIves/github-pages-deploy-action@v4.3.0
+#        if: matrix.node-version == '16.x' && github.ref == 'refs/heads/master'
+#        with:
+#          BRANCH: gh-pages
+#          FOLDER: target/site/serenity
+#          CLEAN: true
