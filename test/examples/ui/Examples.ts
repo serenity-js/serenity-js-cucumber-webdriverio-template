@@ -9,7 +9,7 @@ import { By, PageElement, PageElements, Text } from '@serenity-js/web';
  */
 export class Examples {
     static all = () =>
-    PageElements.located(By.css('ul li a')).describedAs('available examples')
+        PageElements.located(By.css('ul li a')).describedAs('available examples')
 
     /**
      * Note how I pick an element which text matches `name` without having to use XPath
