@@ -3,7 +3,8 @@ import isCI = require('is-ci');
 import { ConsoleReporter } from '@serenity-js/console-reporter';
 import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { Photographer, TakePhotosOfInteractions } from '@serenity-js/web';
+import { WebdriverIOConfig } from '@serenity-js/webdriverio';
 
 import { Actors } from './test';
 
@@ -186,8 +187,6 @@ export const config: WebdriverIOConfig = {
         tags: [],
         // <number> timeout for step definitions
         timeout: 60000,
-        // <boolean> Fail if there are any undefined or pending steps.
-        strict: false
     },
     
     //

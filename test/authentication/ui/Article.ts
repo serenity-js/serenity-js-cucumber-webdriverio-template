@@ -1,6 +1,6 @@
-import { by, Target } from '@serenity-js/webdriverio';
+import { By, PageElement } from '@serenity-js/web';
 
 export const Article = {
     title: () =>
-        Target.the('article title').located(by.css('h2')),
+        PageElement.located(By.css('h2')).describedAs('article title'),
 }

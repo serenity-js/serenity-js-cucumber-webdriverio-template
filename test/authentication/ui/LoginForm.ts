@@ -1,12 +1,12 @@
-import { by, Target } from '@serenity-js/webdriverio';
+import { By, PageElement } from '@serenity-js/web';
 
 export const LoginForm = {
     usernameField: () =>
-        Target.the('username field').located(by.id('username')),
+        PageElement.located(By.id('username')).describedAs('username field'),
 
     passwordField: () =>
-        Target.the('password field').located(by.id('password')),
+        PageElement.located(By.id('password')).describedAs('password field'),
 
     loginButton: () =>
-        Target.the('login button').located(by.css('button[type="submit"]')),
+        PageElement.located(By.css('button[type="submit"]')).describedAs('login button'),
 }

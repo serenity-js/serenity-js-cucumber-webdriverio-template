@@ -1,6 +1,6 @@
 import { Ensure, includes } from '@serenity-js/assertions';
 import { Task } from '@serenity-js/core';
-import { isVisible, Text } from '@serenity-js/webdriverio';
+import { isVisible, Text } from '@serenity-js/web';
 
 import { FlashMessages } from './ui/FlashMessages';
 

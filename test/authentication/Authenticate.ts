@@ -1,5 +1,5 @@
 import { Task } from '@serenity-js/core';
-import { Click, Enter } from '@serenity-js/webdriverio';
+import { Click, Enter } from '@serenity-js/web';
 
 import { LoginForm } from './ui/LoginForm';
 
