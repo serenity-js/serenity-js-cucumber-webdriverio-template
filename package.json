@@ -58,7 +58,7 @@
     "is-ci": "^3.0.1",
     "npm-failsafe": "^0.4.3",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.8.1",
+    "ts-node": "^10.8.2",
     "typescript": "^4.7.4",
     "wdio-chromedriver-service": "^7.3.2"
   }
