@@ -1,5 +1,3 @@
-import 'expect-webdriverio';
-
 import { Given, Then, When } from '@cucumber/cucumber';
 import { Actor, actorInTheSpotlight } from '@serenity-js/core';
 import { Navigate } from '@serenity-js/web';
