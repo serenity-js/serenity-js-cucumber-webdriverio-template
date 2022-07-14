@@ -13,7 +13,7 @@ export class Examples {
 
     /**
      * Note how I pick an element which text matches `name` without having to use XPath
-     * See: https://janmolak.com/xpath-is-dead-anpm dvanced-web-element-locators-with-serenity-js-2-25-0-66145ad248d4
+     * See: https://janmolak.com/xpath-is-dead-advanced-web-element-locators-with-serenity-js-2-25-0-66145ad248d4
      *
      * @param name
      */
