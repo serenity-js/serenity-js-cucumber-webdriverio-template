@@ -30,11 +30,11 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^14 || ^16",
+    "node": "^14 || ^16 || ^18",
     "npm": "^6 || ^7 || ^8"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.2",
+    "@cucumber/cucumber": "^8.6.0",
     "@serenity-js/assertions": "^3.0.0-rc",
     "@serenity-js/console-reporter": "^3.0.0-rc",
     "@serenity-js/core": "^3.0.0-rc",
@@ -43,21 +43,21 @@
     "@serenity-js/serenity-bdd": "^3.0.0-rc",
     "@serenity-js/web": "^3.0.0-rc",
     "@serenity-js/webdriverio": "^3.0.0-rc",
-    "@wdio/cli": "^7.20.5",
-    "@wdio/local-runner": "^7.20.5",
-    "@wdio/spec-reporter": "^7.20.3",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "chromedriver": "^103.0.0",
-    "eslint": "^8.19.0",
+    "@wdio/cli": "^7.25.1",
+    "@wdio/local-runner": "^7.25.1",
+    "@wdio/spec-reporter": "^7.25.1",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "chromedriver": "^106.0.1",
+    "eslint": "^8.24.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^43.0.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unicorn": "^44.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "is-ci": "^3.0.1",
     "npm-failsafe": "^0.4.3",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.4"
   }
 }
