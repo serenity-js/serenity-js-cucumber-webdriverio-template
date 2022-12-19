@@ -36,6 +36,9 @@ export const config: WebdriverIOConfig = {
         ]
     },
 
+    headless: true,
+    automationProtocol: 'devtools',
+
     // ==================
     // Specify Test Files
     // ==================
@@ -73,7 +76,7 @@ export const config: WebdriverIOConfig = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 6,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -84,7 +87,7 @@ export const config: WebdriverIOConfig = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        // maxInstances: 5,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true,
@@ -95,11 +98,14 @@ export const config: WebdriverIOConfig = {
 
         'goog:chromeOptions': {
             args: [
-                '--headless',
+                '--disable-web-security',
+                '--allow-file-access-from-files',
+                '--allow-file-access',
                 '--disable-infobars',
-                '--no-sandbox',
+                '--ignore-certificate-errors',
+                '--headless',
                 '--disable-gpu',
-                '--window-size=1024,768',
+                '--window-size=1024x768',
             ]
         }
     }],
