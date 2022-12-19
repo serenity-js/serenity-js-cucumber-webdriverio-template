@@ -1,5 +1,3 @@
-import isCI = require('is-ci');
-
 import { ConsoleReporter } from '@serenity-js/console-reporter';
 import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
@@ -97,12 +95,12 @@ export const config: WebdriverIOConfig = {
 
         'goog:chromeOptions': {
             args: [
-                // '--headless',
+                '--headless',
                 '--disable-infobars',
                 '--no-sandbox',
                 '--disable-gpu',
                 '--window-size=1024,768',
-            ].concat(isCI ? ['--headless'] : [])    // run in headless mode on the CI server,
+            ]
         }
     }],
     //
@@ -112,7 +110,8 @@ export const config: WebdriverIOConfig = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'error',
+
     //
     // Set specific log levels per logger
     // loggers:
