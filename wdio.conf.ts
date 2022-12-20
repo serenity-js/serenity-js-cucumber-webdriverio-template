@@ -37,7 +37,7 @@ export const config: WebdriverIOConfig = {
     },
 
     headless: true,
-    automationProtocol: 'devtools',
+    automationProtocol: 'webdriver',
 
     // ==================
     // Specify Test Files
@@ -157,7 +157,10 @@ export const config: WebdriverIOConfig = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [ ],
+    outputDir: 'target/logs',
+    services: [
+        [ 'chromedriver', { } ]
+    ],
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
