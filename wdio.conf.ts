@@ -90,6 +90,10 @@ export const config: WebdriverIOConfig = {
         // maxInstances: 5,
         //
         browserName: 'chrome',
+
+        // See https://webdriver.io/blog/2023/07/31/driver-management
+        browserVersion: 'stable',
+
         acceptInsecureCerts: true,
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
@@ -158,9 +162,6 @@ export const config: WebdriverIOConfig = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     outputDir: 'target/logs',
-    services: [
-        [ 'chromedriver', { } ]
-    ],
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
