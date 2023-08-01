@@ -22,8 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
-        env:
-          CHROMEDRIVER_FILEPATH: "/usr/bin/chromedriver"
       - run: npm run lint
       - run: npm test
         env:
