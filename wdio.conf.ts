@@ -4,8 +4,6 @@ import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
 import { Photographer, TakePhotosOfInteractions } from '@serenity-js/web';
 import { WebdriverIOConfig } from '@serenity-js/webdriverio';
 
-import { Actors } from './test';
-
 export const config: WebdriverIOConfig = {
 
     // =========================
@@ -17,10 +15,6 @@ export const config: WebdriverIOConfig = {
     framework: '@serenity-js/webdriverio',
 
     serenity: {
-        // Use custom Actors class
-        // see: https://serenity-js.org/modules/core/class/src/stage/Cast.ts~Cast.html
-        actors: new Actors(),
-
         // Use Cucumber.js test runner adapter
         // see: https://serenity-js.org/modules/cucumber/
         runner: 'cucumber',
@@ -28,17 +22,16 @@ export const config: WebdriverIOConfig = {
         // Configure reporting services
         // see: https://serenity-js.org/handbook/reporting/
         crew: [
-            ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
-            Photographer.whoWill(TakePhotosOfInteractions),     // slower execution, more comprehensive reports
-            // Photographer.whoWill(TakePhotosOfFailures),      // fast execution, screenshots only when tests fail
-            ConsoleReporter.forDarkTerminals(),
-            new SerenityBDDReporter(),
+            '@serenity-js/console-reporter',
+            '@serenity-js/serenity-bdd',
+            [ '@serenity-js/web:Photographer',      { strategy: 'TakePhotosOfInteractions'    } ],  // slower execution, more comprehensive reports
+            // [ '@serenity-js/web:Photographer',   { strategy: 'TakePhotosOfFailures'        } ],  // fast execution, screenshots only when tests fail
+            [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: 'target/site/serenity' } ],
         ]
     },
 
     headless: true,
     automationProtocol: 'webdriver',
-
     // ==================
     // Specify Test Files
     // ==================
@@ -161,7 +154,7 @@ export const config: WebdriverIOConfig = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    outputDir: 'target/logs',
+    // outputDir: 'target/logs',
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
