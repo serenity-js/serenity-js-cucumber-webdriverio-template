@@ -1,7 +1,3 @@
-import { ConsoleReporter } from '@serenity-js/console-reporter';
-import { ArtifactArchiver } from '@serenity-js/core';
-import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfInteractions } from '@serenity-js/web';
 import { WebdriverIOConfig } from '@serenity-js/webdriverio';
 
 export const config: WebdriverIOConfig = {
