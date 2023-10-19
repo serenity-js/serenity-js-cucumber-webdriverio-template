@@ -31,7 +31,7 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^16.13 || ^18.12 || ^20"
+    "node": "^18.12 || ^20"
   },
   "dependencies": {
     "@cucumber/cucumber": "^10.0.0",
