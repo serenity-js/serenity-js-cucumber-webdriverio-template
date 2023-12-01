@@ -7,12 +7,12 @@ export const config: WebdriverIOConfig = {
     // =========================
 
     // Enable Serenity/JS framework adapter
-    // see: https://serenity-js.org/modules/webdriverio/
+    // see: https://serenity-js.org/handbook/test-runners/webdriverio/
     framework: '@serenity-js/webdriverio',
 
     serenity: {
         // Use Cucumber.js test runner adapter
-        // see: https://serenity-js.org/modules/cucumber/
+        // see: https://serenity-js.org/api/cucumber/
         runner: 'cucumber',
 
         // Configure reporting services
@@ -168,7 +168,7 @@ export const config: WebdriverIOConfig = {
     // reporters: ['spec'],
 
     // Cucumber.js configuration
-    // see: https://serenity-js.org/modules/cucumber/class/src/cli/CucumberConfig.ts~CucumberConfig.html
+    // see: https://serenity-js.org/api/cucumber-adapter/interface/CucumberConfig/
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: [
