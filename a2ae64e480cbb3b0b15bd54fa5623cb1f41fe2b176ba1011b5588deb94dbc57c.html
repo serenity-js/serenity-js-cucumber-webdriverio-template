@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-
-
+<html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Features</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -107,74 +110,50 @@
 
 
 
-    <script>
+    <script class="code" type="text/javascript">$(document).ready(function () {
 
-        $(document).ready(function () {
-
-            var scenarioTable = $('.scenario-result-table').DataTable({
-
-                "order": [],
+            $('.scenario-result-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
                 "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {type: 'time-elapsed-dhms', targets: 4}
+                ]
+            });
+
+            // Results table
+            $('#test-results-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            });
+
+            $('#evidence-table').DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table").DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table-with-pagination").DataTable({
+                order: [[0, "asc",]],
+                pageLength: 10,
+                language: {
                     searchPlaceholder: "Filter",
                     search: ""
                 }
             });
-
-            $('.example-table table').DataTable({
-                searching: false,
-                ordering: false,
-                paging: false,
-                info: false
-            });
-
-            $('.example-table-in-scenario table').DataTable({
-                searching: false,
-                ordering: false,
-                paging: false,
-                info: false
-            });
-
-            $('#evidence-table').DataTable(
-                {
-                    searching: false,
-                    ordering: false,
-                    paging: false,
-                    info: false
-                }
-            );
-
-
-            $(".scenario-docs .card-body table").wrap("<div class='table-responsive'></div>");
-
-            $("#requirements-tabs").tabs();
-            $("#test-tabs").tabs();
-
-            var requirementsTree = [{"text":"Form-Based Authentication","type":"feature","href":"a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
-
-            $('#tree').treeview({
-                data: requirementsTree,
-                enableLinks: true,
-                levels: 10,
-                showTags: true,
-                expandIcon: "bi bi-journal-plus",
-                collapseIcon: "bi bi-journal-minus",
-                emptyIcon: "bi bi-journal"
-            });
-
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $(".scenario-docs > div > p").html(function () {
-                var text = $(this).text().trim().split(" ");
-                var first = text.shift();
-                return (text.length > 0 ? "<strong>" + first + "</strong> " : first) + text.join(" ");
-            });
         });
     </script>
 </head>
-
 
 <body class="results-page">
 <div id="topheader">
@@ -189,25 +168,42 @@
     </div>
 </div>
 
-
 <div class="middlecontent">
+
+
     <div id="contenttop">
         <div class="middlebg">
-            <span class="breadcrumbs">
-            <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
-
-                > <a href="3d15fb224daa0a60e7ea1909c694a3691e714bfa12bf5e64ad63e3c811f33eb3.html">Authentication</a>
-
-
-                    > <span class="truncate-40">Form-Based Authentication</span>
-
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                    > <a href="3d15fb224daa0a60e7ea1909c694a3691e714bfa12bf5e64ad63e3c811f33eb3.html" title="Authentication (breadcrumbType)">
+                    Authentication
+                </a>
+                > <span class="truncate-60">
+                Form-Based Authentication
             </span>
+        </span>
         </div>
         <div class="rightbg"></div>
     </div>
-    <div class="clr"></div>
 
+    <div class="clr"></div>
     <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-12-2023 21:29:38</span>
+ second table*/-->
 
 <div>
     <ul class="nav nav-tabs" role="tablist">
@@ -224,7 +220,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-12-2023 03:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-12-2023 21:29</span>
     <br style="clear:left"/>
 </div>
 
@@ -249,16 +245,16 @@
                                                     <span class="badge tag-badge" style="background:default;">
                                                         <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink"
                                                                                           style="background:default;"
-                                                                                          href="a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html">Form-Based Authentication
-                                                        (feature)</a>
+                                                                                          href="38908ff19b9de2b4d173c404fa86d80b5ff7afb1e4574f9199961549146f4800.html">Chrome-Headless-Shell 120.0.6099.109
+                                                        (browser)</a>
                                                     </span>
                                                 </p>
                                                 <p class="tag">
                                                     <span class="badge tag-badge" style="background:default;">
                                                         <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink"
                                                                                           style="background:default;"
-                                                                                          href="6fabea0b6723af89d14f174d33d35a77fb44b6401d81a306cdb71aee005690d6.html">Chrome-Headless-Shell 120.0.6099.71
-                                                        (browser)</a>
+                                                                                          href="a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html">Form-Based Authentication
+                                                        (feature)</a>
                                                     </span>
                                                 </p>
                                                 <p class="tag">
@@ -340,14 +336,14 @@ I'd like to see an example
                                                                                     <tr>
                                                                                         <td class="icons-bar">
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="803cfc5b71435191e52bf6902891bde84768ff7b9b2b9f660769a1e5294cab8b.html"
+                                                                                               href="c9a6124e6afad9dca2c0bd83c7517936960263661fb50bbabdc2987b1d64cc7d.html"
                                                                                                title="View test results">
                                                                                                 <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                                 </a>
 
 
                                                                                                 <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="803cfc5b71435191e52bf6902891bde84768ff7b9b2b9f660769a1e5294cab8b.html"
+                                                                                                   href="c9a6124e6afad9dca2c0bd83c7517936960263661fb50bbabdc2987b1d64cc7d.html"
                                                                                                    title="View test results">
                                                                                                     <i class="bi bi-eyeglasses"></i>
                                                                                                 </a>
@@ -362,7 +358,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="7aaab24c-e523-4864-81f6-681b69506a33"></a>
+                                                        <a name="3a909206-8b12-42ec-a677-1e336f212aaa"></a>
 
 
                                                             <div class="scenario-docs card" id="3b5b944c7aaa55529f532ec8df872aa3ebcf9bf8da007a420e315d3de83daf19">
@@ -370,7 +366,7 @@ I'd like to see an example
                                                                      style="min-height:1.5em;">
                                                                     <div>
                                                             <span class="scenario-heading">
-                                                                <a href="803cfc5b71435191e52bf6902891bde84768ff7b9b2b9f660769a1e5294cab8b.html"
+                                                                <a href="c9a6124e6afad9dca2c0bd83c7517936960263661fb50bbabdc2987b1d64cc7d.html"
                                                                    title="View test results">Scenario: <span class='context-icon'><i class='fa fa-chrome' aria-hidden='true'></i> <i class='fa fa-linux' aria-hidden='true'></i></span>Using username and password to log in</a>
                                                             </span>
                                                                         <span class="scenario-result-icon">
@@ -456,12 +452,12 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                         <tbody>
                                                             <tr class="scenario-result SUCCESS">
                                                                 <td>
-                                                                        <a href="803cfc5b71435191e52bf6902891bde84768ff7b9b2b9f660769a1e5294cab8b.html"><span class='context-icon'><i class='fa fa-chrome' aria-hidden='true'></i> <i class='fa fa-linux' aria-hidden='true'></i></span>Using username and password to log in</a>
+                                                                        <a href="c9a6124e6afad9dca2c0bd83c7517936960263661fb50bbabdc2987b1d64cc7d.html"><span class='context-icon'><i class='fa fa-chrome' aria-hidden='true'></i> <i class='fa fa-linux' aria-hidden='true'></i></span>Using username and password to log in</a>
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>03:30:58</td>
-                                                                <td>3s 206ms</td>
+                                                                <td>21:29:32</td>
+                                                                <td>3s 244ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -489,9 +485,9 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="6fabea0b6723af89d14f174d33d35a77fb44b6401d81a306cdb71aee005690d6.html">
+                                    <a href="38908ff19b9de2b4d173c404fa86d80b5ff7afb1e4574f9199961549146f4800.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome-Headless-Shell 120.0.6099.71&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome-Headless-Shell 120.0.6099.109&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -812,12 +808,7 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
     <!-- END SUMMARY CHART -->
 </body>
 </html>
-224, 152, 0.75)' ]
-                },
-                {
-                    label: ['Aborted Tests'],
-                    data: [null],
-                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+or: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
@@ -877,6 +868,17 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
+lf")
                 }
             }
         }
