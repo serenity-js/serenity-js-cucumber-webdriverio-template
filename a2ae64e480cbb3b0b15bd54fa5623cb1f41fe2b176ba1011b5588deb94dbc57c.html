@@ -224,7 +224,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-12-2023 22:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-12-2023 21:44</span>
     <br style="clear:left"/>
 </div>
 
@@ -362,7 +362,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="c17a85a0-5f38-4f24-92ed-8722445171c1"></a>
+                                                        <a name="db919f16-4627-4163-a782-9134e30d923e"></a>
 
 
                                                             <div class="scenario-docs card" id="3b5b944c7aaa55529f532ec8df872aa3ebcf9bf8da007a420e315d3de83daf19">
@@ -460,8 +460,8 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>22:30:46</td>
-                                                                <td>4s 324ms</td>
+                                                                <td>21:44:52</td>
+                                                                <td>3s 393ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -812,12 +812,7 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
     <!-- END SUMMARY CHART -->
 </body>
 </html>
-24, 152, 0.75)' ]
-                },
-                {
-                    label: ['Aborted Tests'],
-                    data: [null],
-                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+or: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
@@ -877,6 +872,17 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
+lf")
                 }
             }
         }
