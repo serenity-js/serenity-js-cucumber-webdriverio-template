@@ -115,7 +115,11 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 5}
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -124,6 +128,12 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
             })
 
             // Results table
@@ -142,7 +152,17 @@
             $(".feature-coverage-table").DataTable({
                 searching: true,
                 paging: false,
-                info: false
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -152,7 +172,13 @@
                 language: {
                     searchPlaceholder: "Filter",
                     search: ""
-                }
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
         });
     </script>
@@ -198,7 +224,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-08-2024 05:19:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-08-2024 18:03:31</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -295,14 +321,14 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 19, 2024 05:19:33</td>
+                    <td>Aug 27, 2024 18:03:23</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 19, 2024 05:19:37</td>
+                    <td>Aug 27, 2024 18:03:27</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -353,12 +379,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table"
-                                                                           id="Feature">
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -371,6 +397,37 @@
                                                                                             <a href="a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html"> Form-Based Authentication</a>
                                                                                     </td>
                                                                                     <td>1</td>
+                                                                                    <td>Using username and password to log in #1 - username: tomsmith, password: SuperSecretPassword!, outcome: succeeded
+Given Alice starts with the "Form Authentication" example
+Alice navigates to "/"
+Alice picks example called Form Authentication
+Alice clicks on the first of available examples where Text does equal "Form Authentication"
+When she logs in using "tomsmith" and "SuperSecretPassword!"
+Alice logs in as tomsmith
+Alice enters "tomsmith" into username field
+Alice enters "SuperSecretPassword!" into password field
+Alice clicks on login button
+Then she should see that authentication has succeeded
+Alice verifies that authentication has succeeded
+Alice verifies that flash alert is present
+Alice ensures that flash message does become visible
+Alice ensures that the text of flash message does include "You logged into a secure area!"
+Using username and password to log in #2 - username: foobar, password: barfoo, outcome: failed
+Given Alice starts with the "Form Authentication" example
+Alice navigates to "/"
+Alice picks example called Form Authentication
+Alice clicks on the first of available examples where Text does equal "Form Authentication"
+When she logs in using "foobar" and "barfoo"
+Alice logs in as foobar
+Alice enters "foobar" into username field
+Alice enters "barfoo" into password field
+Alice clicks on login button
+Then she should see that authentication has failed
+Alice verifies that authentication has failed
+Alice verifies that flash alert is present
+Alice ensures that flash message does become visible
+Alice ensures that the text of flash message does include "Your username is invalid!"
+</td>
                                                                                     <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -403,9 +460,9 @@
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="8020174121e1232d71e0867df4ceaa855605d4a80bc356b4369da38e22a46a5d.html">
+                                    <a href="1fefb95800696346d84a18380e1c6b8ef16c11113515a7a73de1adb4b4820e65.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome-Headless-Shell 127.0.6533.119&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome 128.0.6613.84&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -496,7 +553,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 19, 2024 05:19:33</td>
+                    <td>Aug 27, 2024 18:03:23</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
@@ -508,7 +565,7 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 19, 2024 05:19:37</td>
+                    <td>Aug 27, 2024 18:03:27</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
@@ -522,14 +579,14 @@
 
                                                         <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>feature</th>
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
+                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -543,7 +600,7 @@
                                                                         <td data-order="Using username and password to log in">
                                                                             <i class="bi bi-table"
                                                                                title="Data Driven Scenario"> <a
-                                                                                        href="f7718486a54f54ca0dfa8a992066b860a3b3c25cfad7848b9047c84911887c01.html">Using username and password to log in</a>
+                                                                                        href="6038ebe2c286c6596d3e8322f07fd93c74fe628d30cbcbc9b1e1223d208b9b84.html">Using username and password to log in</a>
                                                                                 <br/>
                                                                                     <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 2 passing test cases
                                                                                     <br/>
@@ -551,8 +608,11 @@
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                         </td>
                                                                         <td>2</td>
-                                                                        <td data-order="1724044773">05:19:33</td>
-                                                                        <td>4s 483ms</td>
+                                                                        <td>When she logs in using "<username>" and "<password>"
+Then she should see that authentication has <outcome>
+</td>
+                                                                        <td data-order="1724781803">18:03:23</td>
+                                                                        <td>4s 355ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -580,9 +640,9 @@
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="8020174121e1232d71e0867df4ceaa855605d4a80bc356b4369da38e22a46a5d.html">
+                                    <a href="1fefb95800696346d84a18380e1c6b8ef16c11113515a7a73de1adb4b4820e65.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome-Headless-Shell 127.0.6533.119&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome 128.0.6613.84&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -644,7 +704,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.1.6</span>
+            <span class="version">Serenity BDD version 4.1.20</span>
         </div>
     </div>
 </div>
