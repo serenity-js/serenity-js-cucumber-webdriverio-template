@@ -31,7 +31,7 @@ jobs:
         env:
           CI: true
       - name: GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.6.6
+        uses: JamesIves/github-pages-deploy-action@v4.6.7
         if: matrix.node-version == '18.x' && github.ref == 'refs/heads/main'
         with:
           BRANCH: gh-pages
