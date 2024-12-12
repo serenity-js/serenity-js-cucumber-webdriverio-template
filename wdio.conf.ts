@@ -26,7 +26,6 @@ export const config: WebdriverIOConfig = {
         ]
     },
 
-    headless: true,
     automationProtocol: 'webdriver',
     // ==================
     // Specify Test Files
