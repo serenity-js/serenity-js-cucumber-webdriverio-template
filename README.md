@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/serenity-js/serenity-js?label=Serenity%2FJS&logo=github&style=badge)](https://github.com/serenity-js/serenity-js)
 [![Support Serenity/JS on GitHub](https://img.shields.io/badge/Support-@serenity--js-703EC8?logo=github)](https://github.com/sponsors/serenity-js)
 
-[![Build Status](https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions)
+[![Build Status](https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/workflows/main.yml/badge.svg)](https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/workflows/main.yml)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 
