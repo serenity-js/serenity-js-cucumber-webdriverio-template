@@ -1,4 +1,4 @@
-# Serenity/JS Mocha WebdriverIO Template
+# Serenity/JS Cucumber WebdriverIO Template
 
 [![Follow Serenity/JS on LinkedIn](https://img.shields.io/badge/Follow-Serenity%2FJS%20-0077B5?logo=linkedin)](https://www.linkedin.com/company/serenity-js)
 [![Watch Serenity/JS on YouTube](https://img.shields.io/badge/Watch-@serenity--js-E62117?logo=youtube)](https://www.youtube.com/@serenity-js)
@@ -68,7 +68,7 @@ Modify the examples or write your own scenarios using the [Serenity/JS Screenpla
 
 ## 🌟 Features
 
-- **All automation tools ready to go**: Start testing immediately with WebdriverIO, Serenity/JS and Mocha already integrated and configured.
+- **All automation tools ready to go**: Start testing immediately with WebdriverIO, Serenity/JS and Cucumber already integrated and configured.
 - **Serenity BDD Reports**: Serenity BDD reporter pre-configured with reports available at `./target/site/serenity`
     - **Published Reports**: Reports for this repository are published to GitHub Pages and available at https://serenity-js.github.io/serenity-js-cucumber-webdriverio-template/.
 - **Screenplay Pattern**: Out-of-the-box integration with the Serenity/JS actors and Screenplay Pattern APIs
