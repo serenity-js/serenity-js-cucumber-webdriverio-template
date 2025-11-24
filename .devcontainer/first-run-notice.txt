@@ -1,0 +1,8 @@
+👋 Welcome to your Serenity/JS GitHub Codespace!
+
+🛠️ Your environment is fully configured and ready for you to explore the Serenity/JS framework.
+
+🚀 Once the setup process in the terminal completes:
+    - Open the port labeled "Serenity Reports" to view the test execution reports.
+
+ℹ️ Learn more at 👉 https://serenity-js.org/
