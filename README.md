@@ -181,6 +181,7 @@ If Java is not installed, download it from [Oracle](https://www.oracle.com/java/
 
 ## Documentation
 
+- [Using Serenity/JS with Cucumber](https://serenity-js.org/handbook/test-runners/cucumber/)
 - [API Reference](https://serenity-js.org/api/)
 - [Screenplay Pattern Guide](https://serenity-js.org/handbook/design/screenplay-pattern/)
 - [Serenity/JS Project Templates](https://serenity-js.org/handbook/project-templates/)
