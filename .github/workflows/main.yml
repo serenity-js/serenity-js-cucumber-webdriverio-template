@@ -24,7 +24,7 @@ jobs:
         run: npm run lint
       - name: Run tests
         run: npm test
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: serenity-report
