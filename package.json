@@ -33,7 +33,7 @@
     "node": "^20 || ^22 || ^24"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^12.7.0",
+    "@cucumber/cucumber": "^12.8.1",
     "@serenity-js/assertions": "^3.42.1",
     "@serenity-js/console-reporter": "^3.42.1",
     "@serenity-js/core": "^3.42.1",
