@@ -65,6 +65,9 @@ export const config: WebdriverIOConfig = {
     // from the same test should run tests.
     //
     maxInstances: 6,
+
+    // Disable automatic Xvfb usage as headless Chrome doesn't need a display server
+    autoXvfb: false,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
