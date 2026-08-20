@@ -1,0 +1,46 @@
+{
+  "$schema": "https://serenity-js.org/schemas/report-summary.json",
+  "generated": "2026-08-20T02:28:12.570Z",
+  "title": "Cucumber",
+  "schemaVersion": 1,
+  "reportUrl": "./index.html",
+  "ci": {
+    "commit": "55ca44dd15c9881bca12b8bfc147cfc6b5b7e5e3",
+    "branch": "main",
+    "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32324630599"
+  },
+  "latestRun": {
+    "timestamp": "2026-08-20T02:28:11.447Z",
+    "label": "2226",
+    "totals": {
+      "passed": 1,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "compromised": 0,
+      "error": 0
+    },
+    "duration": 3171
+  },
+  "runs": 1,
+  "failureClusters": [],
+  "consistency": {
+    "flaky": [],
+    "inconsistent": [],
+    "degraded": [],
+    "recovered": []
+  },
+  "scores": {
+    "passRate": 100,
+    "completeness": 100,
+    "consistency": 100,
+    "confidence": 100
+  },
+  "slowest": [
+    {
+      "name": "Using username and password to log in",
+      "source": "authentication/form-based_authentication.feature:24",
+      "duration": 3171
+    }
+  ]
+}
