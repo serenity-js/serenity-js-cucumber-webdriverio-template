@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-20T11:11:14.225Z",
+  "generated": "2026-08-20T12:44:17.086Z",
   "title": "Cucumber",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "b5e82eb94822c5a9974266b4d0043b2184309d6b",
+    "commit": "965f7c6e53c871bd8600bec80920e98fd0aa301b",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32362466807"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32370290858"
   },
   "latestRun": {
-    "timestamp": "2026-08-20T11:11:13.181Z",
-    "label": "2230",
+    "timestamp": "2026-08-20T12:44:16.087Z",
+    "label": "2232",
     "totals": {
       "passed": 1,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 2275
+    "duration": 2142
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,7 +40,7 @@
     {
       "name": "Using username and password to log in",
       "source": "authentication/form-based_authentication.feature:24",
-      "duration": 2275
+      "duration": 2142
     }
   ]
 }
