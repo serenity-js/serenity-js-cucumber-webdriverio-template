@@ -168,6 +168,8 @@ npx @serenity-js/html-reporter serve --dir ./reports/serenity-js --port 3000 --o
 ## Documentation
 
 - [Using Serenity/JS with Cucumber](https://serenity-js.org/handbook/test-runners/cucumber/)
+- [Using Serenity/JS with WebdriverIO](https://serenity-js.org/handbook/test-runners/webdriverio/)
+- [Serenity/JS HTML Reporter](https://serenity-js.org/handbook/reporting/html-reporter/)
 - [API Reference](https://serenity-js.org/api/)
 - [Screenplay Pattern Guide](https://serenity-js.org/handbook/design/screenplay-pattern/)
 - [Serenity/JS Project Templates](https://serenity-js.org/handbook/project-templates/)
