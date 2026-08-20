@@ -85,10 +85,10 @@ View the test reports generated under the following path:
 
 - **Serenity/JS HTML Report**: `./reports/serenity-js/index.html`
 
-Alternatively, serve the report using the built-in HTTP server,
-accessible at [http://localhost:8080](http://localhost:8080):
+Alternatively, serve the report using the built-in server,
+which opens it automatically in your browser:
 ```
-npm run start
+npm run test:report
 ```
 
 ## Execution
@@ -98,10 +98,9 @@ The project provides several [NPM scripts](https://docs.npmjs.com/cli/v6/using-n
 ```
 npm run lint            # runs code linter
 npm run lint:fix        # attempts to automatically fix linting issues
-npm run clean           # removes reports from any previous test run
 npm test                # executes the example test suite
                         # and generates the report under ./reports/serenity-js
-npm start               # starts a mini HTTP server and serves the test reports
+npm run test:report     # serves the test report and opens it in the browser
                         # at http://localhost:8080
 ```
 
@@ -163,7 +162,7 @@ reports/serenity-js/                       # Generated Serenity/JS HTML reports
 
 If the report server fails to start because port 8080 is in use, you can specify a different port:
 ```shell
-npx http-server -p 3000 reports/serenity-js -s -o
+npx @serenity-js/html-reporter serve --dir ./reports/serenity-js --port 3000 --open
 ```
 
 ## Documentation

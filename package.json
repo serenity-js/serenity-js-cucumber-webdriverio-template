@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf reports",
-    "test": "failsafe clean test:execute",
-    "test:execute": "wdio wdio.conf.ts",
-    "start": "npx http-server -p 8080 reports/serenity-js -s -o",
+    "test": "wdio wdio.conf.ts",
+    "test:report": "npx @serenity-js/html-reporter serve --dir ./reports/serenity-js --open",
     "lint": "eslint --ext ts --config .eslintrc.js .",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -55,9 +53,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^52.0.0",
     "eslint-plugin-unused-imports": "^3.2.0",
-    "http-server": "^14.1.1",
-    "npm-failsafe": "^1.4.0",
-    "rimraf": "^6.1.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
