@@ -6,4 +6,4 @@ node_modules
 *.log
 
 # Build artifacts
-target
+reports
