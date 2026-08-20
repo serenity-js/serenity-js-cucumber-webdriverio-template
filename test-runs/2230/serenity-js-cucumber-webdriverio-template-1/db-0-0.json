@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-08-20T02:43:42.975Z",
-  "finishedAt": "2026-08-20T02:43:46.119Z",
+  "startedAt": "2026-08-20T11:11:13.181Z",
+  "finishedAt": "2026-08-20T11:11:15.456Z",
   "outcomes": {
     "passed": 1,
     "failed": 0,
@@ -17,8 +17,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 3144,
-      "startedAt": "2026-08-20T02:43:42.975Z",
+      "duration": 2275,
+      "startedAt": "2026-08-20T11:11:13.181Z",
       "source": {
         "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
         "line": 24
@@ -92,7 +92,7 @@
             "outcome": {
               "code": 64
             },
-            "duration": 2035,
+            "duration": 1268,
             "activities": [
               {
                 "type": "Task",
@@ -100,8 +100,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 1508,
-                "startedAt": "2026-08-20T02:43:40.941Z",
+                "duration": 849,
+                "startedAt": "2026-08-20T11:11:11.914Z",
                 "children": [
                   {
                     "type": "Task",
@@ -109,8 +109,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 816,
-                    "startedAt": "2026-08-20T02:43:40.959Z",
+                    "duration": 223,
+                    "startedAt": "2026-08-20T11:11:11.931Z",
                     "children": [],
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -124,8 +124,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 652,
-                    "startedAt": "2026-08-20T02:43:41.786Z",
+                    "duration": 588,
+                    "startedAt": "2026-08-20T11:11:12.164Z",
                     "children": [
                       {
                         "type": "Task",
@@ -133,8 +133,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 641,
-                        "startedAt": "2026-08-20T02:43:41.787Z",
+                        "duration": 576,
+                        "startedAt": "2026-08-20T11:11:12.165Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/examples/PickExample.ts",
@@ -161,8 +161,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 219,
-                "startedAt": "2026-08-20T02:43:42.450Z",
+                "duration": 283,
+                "startedAt": "2026-08-20T11:11:12.764Z",
                 "children": [
                   {
                     "type": "Task",
@@ -170,8 +170,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 202,
-                    "startedAt": "2026-08-20T02:43:42.456Z",
+                    "duration": 265,
+                    "startedAt": "2026-08-20T11:11:12.772Z",
                     "children": [
                       {
                         "type": "Task",
@@ -179,8 +179,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 49,
-                        "startedAt": "2026-08-20T02:43:42.456Z",
+                        "duration": 44,
+                        "startedAt": "2026-08-20T11:11:12.772Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -195,7 +195,7 @@
                           "code": 64
                         },
                         "duration": 43,
-                        "startedAt": "2026-08-20T02:43:42.516Z",
+                        "startedAt": "2026-08-20T11:11:12.827Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -209,8 +209,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 78,
-                        "startedAt": "2026-08-20T02:43:42.570Z",
+                        "duration": 147,
+                        "startedAt": "2026-08-20T11:11:12.880Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -237,8 +237,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 278,
-                "startedAt": "2026-08-20T02:43:42.670Z",
+                "duration": 106,
+                "startedAt": "2026-08-20T11:11:13.048Z",
                 "children": [
                   {
                     "type": "Task",
@@ -246,8 +246,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 260,
-                    "startedAt": "2026-08-20T02:43:42.678Z",
+                    "duration": 87,
+                    "startedAt": "2026-08-20T11:11:13.056Z",
                     "children": [
                       {
                         "type": "Task",
@@ -255,8 +255,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 224,
-                        "startedAt": "2026-08-20T02:43:42.678Z",
+                        "duration": 51,
+                        "startedAt": "2026-08-20T11:11:13.056Z",
                         "children": [
                           {
                             "type": "Task",
@@ -264,8 +264,8 @@
                             "outcome": {
                               "code": 64
                             },
-                            "duration": 213,
-                            "startedAt": "2026-08-20T02:43:42.679Z",
+                            "duration": 41,
+                            "startedAt": "2026-08-20T11:11:13.056Z",
                             "children": [],
                             "location": {
                               "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -287,7 +287,7 @@
                           "code": 64
                         },
                         "duration": 14,
-                        "startedAt": "2026-08-20T02:43:42.913Z",
+                        "startedAt": "2026-08-20T11:11:13.118Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -320,7 +320,7 @@
             "outcome": {
               "code": 64
             },
-            "duration": 1109,
+            "duration": 1007,
             "activities": [
               {
                 "type": "Task",
@@ -328,8 +328,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 660,
-                "startedAt": "2026-08-20T02:43:42.977Z",
+                "duration": 576,
+                "startedAt": "2026-08-20T11:11:13.183Z",
                 "children": [
                   {
                     "type": "Task",
@@ -337,8 +337,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 108,
-                    "startedAt": "2026-08-20T02:43:42.984Z",
+                    "duration": 67,
+                    "startedAt": "2026-08-20T11:11:13.190Z",
                     "children": [],
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -352,8 +352,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 524,
-                    "startedAt": "2026-08-20T02:43:43.102Z",
+                    "duration": 480,
+                    "startedAt": "2026-08-20T11:11:13.268Z",
                     "children": [
                       {
                         "type": "Task",
@@ -361,8 +361,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 513,
-                        "startedAt": "2026-08-20T02:43:43.103Z",
+                        "duration": 470,
+                        "startedAt": "2026-08-20T11:11:13.268Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/examples/PickExample.ts",
@@ -389,8 +389,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 193,
-                "startedAt": "2026-08-20T02:43:43.638Z",
+                "duration": 194,
+                "startedAt": "2026-08-20T11:11:13.759Z",
                 "children": [
                   {
                     "type": "Task",
@@ -399,7 +399,7 @@
                       "code": 64
                     },
                     "duration": 177,
-                    "startedAt": "2026-08-20T02:43:43.643Z",
+                    "startedAt": "2026-08-20T11:11:13.765Z",
                     "children": [
                       {
                         "type": "Task",
@@ -407,8 +407,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 35,
-                        "startedAt": "2026-08-20T02:43:43.643Z",
+                        "duration": 36,
+                        "startedAt": "2026-08-20T11:11:13.765Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -422,8 +422,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 36,
-                        "startedAt": "2026-08-20T02:43:43.689Z",
+                        "duration": 37,
+                        "startedAt": "2026-08-20T11:11:13.811Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -437,8 +437,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 75,
-                        "startedAt": "2026-08-20T02:43:43.735Z",
+                        "duration": 73,
+                        "startedAt": "2026-08-20T11:11:13.859Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
@@ -465,8 +465,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 231,
-                "startedAt": "2026-08-20T02:43:43.832Z",
+                "duration": 213,
+                "startedAt": "2026-08-20T11:11:13.954Z",
                 "children": [
                   {
                     "type": "Task",
@@ -474,8 +474,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 215,
-                    "startedAt": "2026-08-20T02:43:43.838Z",
+                    "duration": 192,
+                    "startedAt": "2026-08-20T11:11:13.964Z",
                     "children": [
                       {
                         "type": "Task",
@@ -483,8 +483,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 176,
-                        "startedAt": "2026-08-20T02:43:43.839Z",
+                        "duration": 158,
+                        "startedAt": "2026-08-20T11:11:13.964Z",
                         "children": [
                           {
                             "type": "Task",
@@ -492,8 +492,8 @@
                             "outcome": {
                               "code": 64
                             },
-                            "duration": 167,
-                            "startedAt": "2026-08-20T02:43:43.839Z",
+                            "duration": 147,
+                            "startedAt": "2026-08-20T11:11:13.965Z",
                             "children": [],
                             "location": {
                               "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -514,8 +514,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 16,
-                        "startedAt": "2026-08-20T02:43:44.026Z",
+                        "duration": 14,
+                        "startedAt": "2026-08-20T11:11:14.132Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
@@ -578,12 +578,12 @@
     "serenityVersion": "3.45.8",
     "runtime": {
       "provider": "GitHub Actions",
-      "buildNumber": "2228",
+      "buildNumber": "2230",
       "branch": "main",
-      "commit": "8eb3233f59c1f899faf483aea2d34fb04750413f",
-      "commitMessage": "Merge pull request #924 from serenity-js/chore/remove-failsafe-rimraf",
+      "commit": "b5e82eb94822c5a9974266b4d0043b2184309d6b",
+      "commitMessage": "Merge pull request #925 from serenity-js/docs/add-documentation-links",
       "commitAuthor": "Jan Molak",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32325576226",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32362466807",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template",
       "triggeredBy": "jan-molak"
@@ -591,7 +591,7 @@
     "projectName": "serenity-js-cucumber-webdriverio-template",
     "packageManager": "npm"
   },
-  "testRunId": "2228",
+  "testRunId": "2230",
   "moduleId": "serenity-js-cucumber-webdriverio-template",
   "attempt": 1
 }

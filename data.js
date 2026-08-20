@@ -11,9 +11,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "compromised": 0,
       "error": 0
     },
-    "duration": 3144,
-    "startedAt": "2026-08-20T02:43:42.975Z",
-    "finishedAt": "2026-08-20T02:43:46.119Z",
+    "duration": 2275,
+    "startedAt": "2026-08-20T11:11:13.181Z",
+    "finishedAt": "2026-08-20T11:11:15.456Z",
     "testRunner": "Cucumber"
   },
   "scenarios": [
@@ -21,8 +21,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Using username and password to log in",
       "category": "Form-Based Authentication",
       "outcome": "SUCCESS",
-      "duration": 3144,
-      "startedAt": "2026-08-20T02:43:42.975Z",
+      "duration": 2275,
+      "startedAt": "2026-08-20T11:11:13.181Z",
       "source": {
         "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
         "line": 24
@@ -53,9 +53,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2228",
-          "timestamp": "2026-08-20T02:43:42.975Z",
-          "duration": 3144,
+          "run": "2230",
+          "timestamp": "2026-08-20T11:11:13.181Z",
+          "duration": 2275,
           "activities": []
         }
       ],
@@ -103,20 +103,20 @@ window.__SERENITY_REPORT_DATA__ = {
               "outcome": "succeeded"
             },
             "outcome": "SUCCESS",
-            "duration": 2035,
+            "duration": 1268,
             "activities": [
               {
                 "name": "Given Alice starts with the \"Form Authentication\" example",
                 "outcome": "SUCCESS",
-                "duration": 1508,
+                "duration": 849,
                 "children": [
                   {
                     "name": "Alice navigates to \"/\"",
                     "outcome": "SUCCESS",
-                    "duration": 816,
+                    "duration": 223,
                     "children": [],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:40.959Z",
+                    "startedAt": "2026-08-20T11:11:11.931Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                       "line": 171,
@@ -126,15 +126,15 @@ window.__SERENITY_REPORT_DATA__ = {
                   {
                     "name": "Alice picks example called Form Authentication",
                     "outcome": "SUCCESS",
-                    "duration": 652,
+                    "duration": 588,
                     "children": [
                       {
                         "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
                         "outcome": "SUCCESS",
-                        "duration": 641,
+                        "duration": 576,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:41.787Z",
+                        "startedAt": "2026-08-20T11:11:12.165Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/examples/PickExample.ts",
                           "line": 13,
@@ -143,7 +143,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:41.786Z",
+                    "startedAt": "2026-08-20T11:11:12.164Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 17,
@@ -152,7 +152,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:40.941Z",
+                "startedAt": "2026-08-20T11:11:11.914Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 8
@@ -161,20 +161,20 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "When she logs in using \"tomsmith\" and \"SuperSecretPassword!\"",
                 "outcome": "SUCCESS",
-                "duration": 219,
+                "duration": 283,
                 "children": [
                   {
                     "name": "Alice logs in as tomsmith",
                     "outcome": "SUCCESS",
-                    "duration": 202,
+                    "duration": 265,
                     "children": [
                       {
                         "name": "Alice enters \"tomsmith\" into username field",
                         "outcome": "SUCCESS",
-                        "duration": 49,
+                        "duration": 44,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:42.456Z",
+                        "startedAt": "2026-08-20T11:11:12.772Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 20,
@@ -187,7 +187,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         "duration": 43,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:42.516Z",
+                        "startedAt": "2026-08-20T11:11:12.827Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 21,
@@ -197,10 +197,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice clicks on login button",
                         "outcome": "SUCCESS",
-                        "duration": 78,
+                        "duration": 147,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:42.570Z",
+                        "startedAt": "2026-08-20T11:11:12.880Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 22,
@@ -209,7 +209,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:42.456Z",
+                    "startedAt": "2026-08-20T11:11:12.772Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 23,
@@ -218,7 +218,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:42.450Z",
+                "startedAt": "2026-08-20T11:11:12.764Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 18
@@ -227,25 +227,25 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "Then she should see that authentication has succeeded",
                 "outcome": "SUCCESS",
-                "duration": 278,
+                "duration": 106,
                 "children": [
                   {
                     "name": "Alice verifies that authentication has succeeded",
                     "outcome": "SUCCESS",
-                    "duration": 260,
+                    "duration": 87,
                     "children": [
                       {
                         "name": "Alice verifies that flash alert is present",
                         "outcome": "SUCCESS",
-                        "duration": 224,
+                        "duration": 51,
                         "children": [
                           {
                             "name": "Alice ensures that flash message does become visible",
                             "outcome": "SUCCESS",
-                            "duration": 213,
+                            "duration": 41,
                             "children": [],
                             "type": "Task",
-                            "startedAt": "2026-08-20T02:43:42.679Z",
+                            "startedAt": "2026-08-20T11:11:13.056Z",
                             "location": {
                               "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                               "line": 171,
@@ -254,7 +254,7 @@ window.__SERENITY_REPORT_DATA__ = {
                           }
                         ],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:42.678Z",
+                        "startedAt": "2026-08-20T11:11:13.056Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/VerifyAuthentication.ts",
                           "line": 15,
@@ -267,7 +267,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         "duration": 14,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:42.913Z",
+                        "startedAt": "2026-08-20T11:11:13.118Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                           "line": 135,
@@ -276,7 +276,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:42.678Z",
+                    "startedAt": "2026-08-20T11:11:13.056Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 36,
@@ -285,7 +285,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:42.670Z",
+                "startedAt": "2026-08-20T11:11:13.048Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 19
@@ -301,20 +301,20 @@ window.__SERENITY_REPORT_DATA__ = {
               "outcome": "failed"
             },
             "outcome": "SUCCESS",
-            "duration": 1109,
+            "duration": 1007,
             "activities": [
               {
                 "name": "Given Alice starts with the \"Form Authentication\" example",
                 "outcome": "SUCCESS",
-                "duration": 660,
+                "duration": 576,
                 "children": [
                   {
                     "name": "Alice navigates to \"/\"",
                     "outcome": "SUCCESS",
-                    "duration": 108,
+                    "duration": 67,
                     "children": [],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:42.984Z",
+                    "startedAt": "2026-08-20T11:11:13.190Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                       "line": 171,
@@ -324,15 +324,15 @@ window.__SERENITY_REPORT_DATA__ = {
                   {
                     "name": "Alice picks example called Form Authentication",
                     "outcome": "SUCCESS",
-                    "duration": 524,
+                    "duration": 480,
                     "children": [
                       {
                         "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
                         "outcome": "SUCCESS",
-                        "duration": 513,
+                        "duration": 470,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:43.103Z",
+                        "startedAt": "2026-08-20T11:11:13.268Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/examples/PickExample.ts",
                           "line": 13,
@@ -341,7 +341,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:43.102Z",
+                    "startedAt": "2026-08-20T11:11:13.268Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 17,
@@ -350,7 +350,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:42.977Z",
+                "startedAt": "2026-08-20T11:11:13.183Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 8
@@ -359,7 +359,7 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "When she logs in using \"foobar\" and \"barfoo\"",
                 "outcome": "SUCCESS",
-                "duration": 193,
+                "duration": 194,
                 "children": [
                   {
                     "name": "Alice logs in as foobar",
@@ -369,10 +369,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice enters \"foobar\" into username field",
                         "outcome": "SUCCESS",
-                        "duration": 35,
+                        "duration": 36,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:43.643Z",
+                        "startedAt": "2026-08-20T11:11:13.765Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 20,
@@ -382,10 +382,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice enters \"barfoo\" into password field",
                         "outcome": "SUCCESS",
-                        "duration": 36,
+                        "duration": 37,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:43.689Z",
+                        "startedAt": "2026-08-20T11:11:13.811Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 21,
@@ -395,10 +395,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice clicks on login button",
                         "outcome": "SUCCESS",
-                        "duration": 75,
+                        "duration": 73,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:43.735Z",
+                        "startedAt": "2026-08-20T11:11:13.859Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/Authenticate.ts",
                           "line": 22,
@@ -407,7 +407,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:43.643Z",
+                    "startedAt": "2026-08-20T11:11:13.765Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 23,
@@ -416,7 +416,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:43.638Z",
+                "startedAt": "2026-08-20T11:11:13.759Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 18
@@ -425,25 +425,25 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "Then she should see that authentication has failed",
                 "outcome": "SUCCESS",
-                "duration": 231,
+                "duration": 213,
                 "children": [
                   {
                     "name": "Alice verifies that authentication has failed",
                     "outcome": "SUCCESS",
-                    "duration": 215,
+                    "duration": 192,
                     "children": [
                       {
                         "name": "Alice verifies that flash alert is present",
                         "outcome": "SUCCESS",
-                        "duration": 176,
+                        "duration": 158,
                         "children": [
                           {
                             "name": "Alice ensures that flash message does become visible",
                             "outcome": "SUCCESS",
-                            "duration": 167,
+                            "duration": 147,
                             "children": [],
                             "type": "Task",
-                            "startedAt": "2026-08-20T02:43:43.839Z",
+                            "startedAt": "2026-08-20T11:11:13.965Z",
                             "location": {
                               "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                               "line": 171,
@@ -452,7 +452,7 @@ window.__SERENITY_REPORT_DATA__ = {
                           }
                         ],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:43.839Z",
+                        "startedAt": "2026-08-20T11:11:13.964Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/test/authentication/VerifyAuthentication.ts",
                           "line": 21,
@@ -462,10 +462,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice ensures that the text of flash message does include \"Your username is invalid!\"",
                         "outcome": "SUCCESS",
-                        "duration": 16,
+                        "duration": 14,
                         "children": [],
                         "type": "Task",
-                        "startedAt": "2026-08-20T02:43:44.026Z",
+                        "startedAt": "2026-08-20T11:11:14.132Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/node_modules/@serenity-js/cucumber/src/adapter/CucumberCLIAdapter.ts",
                           "line": 135,
@@ -474,7 +474,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T02:43:43.838Z",
+                    "startedAt": "2026-08-20T11:11:13.964Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/step-definitions/the-internet.steps.ts",
                       "line": 36,
@@ -483,7 +483,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T02:43:43.832Z",
+                "startedAt": "2026-08-20T11:11:13.954Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-webdriverio-template/serenity-js-cucumber-webdriverio-template/features/authentication/form-based_authentication.feature",
                   "line": 19
@@ -497,8 +497,8 @@ window.__SERENITY_REPORT_DATA__ = {
   ],
   "history": [
     {
-      "timestamp": "2026-08-20T02:43:42.975Z",
-      "duration": 3144,
+      "timestamp": "2026-08-20T11:11:13.181Z",
+      "duration": 2275,
       "outcomes": {
         "passed": 1,
         "failed": 0,
@@ -507,13 +507,13 @@ window.__SERENITY_REPORT_DATA__ = {
         "compromised": 0,
         "error": 0
       },
-      "label": "2228",
-      "slowest": 3144,
-      "fastest": 3144,
-      "average": 3144,
-      "commit": "8eb3233f59c1f899faf483aea2d34fb04750413f",
+      "label": "2230",
+      "slowest": 2275,
+      "fastest": 2275,
+      "average": 2275,
+      "commit": "b5e82eb94822c5a9974266b4d0043b2184309d6b",
       "branch": "main",
-      "ciJobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32325576226",
+      "ciJobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32362466807",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template",
       "score": {
         "confidence": 100,
@@ -588,12 +588,12 @@ window.__SERENITY_REPORT_DATA__ = {
     ],
     "ci": {
       "provider": "GitHub Actions",
-      "buildNumber": "2228",
+      "buildNumber": "2230",
       "branch": "main",
-      "commit": "8eb3233f59c1f899faf483aea2d34fb04750413f",
-      "commitMessage": "Merge pull request #924 from serenity-js/chore/remove-failsafe-rimraf",
+      "commit": "b5e82eb94822c5a9974266b4d0043b2184309d6b",
+      "commitMessage": "Merge pull request #925 from serenity-js/docs/add-documentation-links",
       "commitAuthor": "Jan Molak",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32325576226",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/actions/runs/32362466807",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template",
       "triggeredBy": "jan-molak"
